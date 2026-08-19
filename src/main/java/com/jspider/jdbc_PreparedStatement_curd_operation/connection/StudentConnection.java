@@ -9,9 +9,9 @@ public class StudentConnection {
 	public static Connection getjdbcStudentConnection() throws SQLException {
 		Driver driver = new Driver();
 		DriverManager.registerDriver(driver);
-		String url = "jdbc:mysql://127.0.0.1:3306/jdbc-m19";
-		String user = "root";
-		String pass = "Raj$49957";
+		String url = "jdbc:mysql://127.0.0.1:3306/jdbc-m19";// enter your database url 
+		String user = "root";//enter your user name here
+		String pass = "";//enter your password here
 		return DriverManager.getConnection(url, user, pass);
 	}
 }
